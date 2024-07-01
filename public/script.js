@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Установка цвета кнопки
   mainButton.setParams({
-  color: '#2ecc71', // Зеленый цвет
+  color: '#E3B0B0', // Цвет кнопки
   });
 
   mainButton.show();
