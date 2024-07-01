@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   const tg = window.Telegram.WebApp;
   tg.expand();
   tg.enableClosingConfirmation();
+  const mainButton = tg.MainButton;
+  mainButton.setText('Вращать');
+  mainButton.show();
 
   const user = tg.initDataUnsafe.user;
 
@@ -46,10 +49,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     ];
 
     balanceInfo.textContent = `Прокруток: ${balance}`;
-
-    const mainButton = tg.MainButton;
-    mainButton.setText('Вращать');
-    mainButton.show();
 
     mainButton.onClick(async () => {
       if (balance <= 0) {
