@@ -15,7 +15,7 @@ body {
 }
 
 .balance {
-  color: #ffffff; /* Белый цвет текста */
+  color: #A68181; /* Цвет текста A68181 */
   font-family: "Halvar Breitschift Medium", sans-serif; /* Шрифт */
   user-select: none; /* Запрет на выделение текста */
   -webkit-user-select: none;
