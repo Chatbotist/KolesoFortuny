@@ -7,8 +7,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   const tg = window.Telegram.WebApp;
   tg.expand();
   tg.enableClosingConfirmation();
+  
+  // Создание главной кнопки
   const mainButton = tg.MainButton;
   mainButton.setText('Вращать');
+  
+  // Установка цвета кнопки
+  mainButton.setParams({
+  color: '#2ecc71', // Зеленый цвет
+  });
+
   mainButton.show();
 
   const user = tg.initDataUnsafe.user;
