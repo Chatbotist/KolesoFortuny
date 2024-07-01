@@ -1,14 +1,17 @@
 body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-image: url('images/fon.JPG');
+  justify-content: flex-start;
+  background: url('images/fon.JPG') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
 }
 
 .content {
