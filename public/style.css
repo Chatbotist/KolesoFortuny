@@ -14,6 +14,15 @@ body {
   user-select: none;
 }
 
+.balance {
+  color: #ffffff; /* Белый цвет текста */
+  font-family: "Halvar Breitschift Medium", sans-serif; /* Шрифт */
+  user-select: none; /* Запрет на выделение текста */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
 #stoper {
   position: absolute;
   top: -10px;
