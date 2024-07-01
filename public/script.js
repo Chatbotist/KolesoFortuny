@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       userData.data.slot_5
     ];
 
-    balanceInfo.textContent = `Прокруток: ${balance}`;
+    balanceInfo.textContent = `Доступно вращений: ${balance}`;
 
     mainButton.onClick(async () => {
       if (balance <= 0) {
