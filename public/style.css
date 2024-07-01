@@ -4,6 +4,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-image: url('images/fon.JPG');
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
