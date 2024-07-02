@@ -69,12 +69,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
       // Массив возможных вариантов выпадения
       const winningOptions = [
+        { angle: 1440, message: "Вы выиграли:\n2=3\nПри покупке двух украшений, третье в подарок" },
         { angle: 1140, message: "Вы выиграли:\nКупон на серьги!" },
         { angle: 1200, message: "Вы выиграли:\nСупер-сертификат на изделия из каталога!" },
         { angle: 1260, message: "Вы выиграли:\n30%\nСкидка на всё!" },
         { angle: 1320, message: "Вы выиграли:\n5 000 руб. \nСертификат на любую покупку!" },
         { angle: 1380, message: "Вы выиграли:\n<b>Подарок-сюрприз</b>\nПри покупке любого изделия" },
-        { angle: 1440, message: "Вы выиграли:\n2=3\nПри покупке двух украшений, третье в подарок" },
       ];
 
       // Выбираем случайный вариант выпадения
@@ -92,6 +92,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Обновляем данные пользователя в базе данных
         try {
+          // Определяем, какой слот выпал
+          const slotIndex = winningOptions.findIndex(option => option.angle === winningOption.angle);
+
+          // Обновляем данные соответствующего слота
+          slots[slotIndex] = '✅';
+
           await fetch('/api/updateUserData', {
             method: 'POST',
             headers: {
