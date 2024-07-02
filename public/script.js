@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const mainButton = tg.MainButton;
   mainButton.setText('Вращать');
   
-  // Установка цвета кнопки
+  // Установка цвета кнопки меню
   mainButton.setParams({
     color: '#E3B0B0', // Цвет кнопки
   });
