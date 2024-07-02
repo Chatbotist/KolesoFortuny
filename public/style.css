@@ -24,7 +24,13 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  
+  position: absolute; /* Используем абсолютное позиционирование */
+  top: 15px; /* Отступ от верхнего края 15 пикселей */
+  left: 50%; /* Горизонтальное выравнивание по центру */
+  transform: translateX(-50%); /* Смещение влево на половину ширины элемента */
 }
+
 
 #stoper {
   position: absolute;
